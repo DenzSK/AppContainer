@@ -1,0 +1,153 @@
+﻿:root {
+    --shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+    --inner-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #FFFFFF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E4EBF5;
+    text-align: center;
+}
+
+h1 {
+    background: #EFEBF4;
+    padding: 30px 0px 30px 0px;
+    box-shadow: var(--shadow);
+    border-radius: 18px;
+}
+
+form {
+    background: #EFEBF4;
+    position: relative;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputBox {
+    position: relative;
+    display: flex;
+    width: 100%
+}
+
+.inputBox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+#todo {
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    box-shadow: var(--inner-shadow);
+}
+
+#todo:focus {
+    box-shadow: var(--shadow);
+}
+
+.addBtn {
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    width: 30%;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    background: transparent;
+    margin-bottom: 20px;
+    transition: .3s ease;
+}
+
+.addBtn:hover {
+    color: #6d5dfc;
+}
+
+.addBtn:active {
+    box-shadow: var(--inner-shadow);
+}
+
+ul {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+}
+
+ul li {
+    background: #EFEBF4;
+    border-radius: 18px;
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 60px;
+    margin-top: 10px;
+    box-shadow: var(--inner-shadow);
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+ul li:hover {
+    margin-top: 20px;
+    box-shadow: var(--shadow)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ftrtext {
+    text-decoration: none;
+}
+
+.return {
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 60%;
+}
+
+    .return:hover {
+        transform: scale(1.01);
+        font-weight: 600;
+        opacity: 100%;
+        color: #6d5dfc;
+    }

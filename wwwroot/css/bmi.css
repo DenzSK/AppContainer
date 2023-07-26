@@ -1,0 +1,214 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E4EBF5;
+    text-align: center;
+}
+
+h1 {
+    background: #EFEBF4;
+    padding: 30px 0px 30px 0px;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+    border-radius: 18px;
+}
+
+
+.bmi {
+    background: #EFEBF4;
+    position: relative;
+    padding: 80px 50px 38px;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bmi form h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    line-height: 0.9em;
+}
+
+.inputBox {
+    position: relative;
+    display: flex;
+}
+
+.inputW input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.inputH input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.inputH input[type="number"] {
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #FFFFFF;
+}
+
+.inputH input[type="number"]:focus {
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+}
+
+.inputH input[type="number"]:focus ~ i {
+    color: #6d5dfc;
+}
+
+.inputW input[type="number"]:focus {
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+}
+
+.inputW input[type="number"]:focus ~ i {
+    color: #6d5dfc;
+}
+
+.inputW input[type="number"] {
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #FFFFFF;
+    
+}
+
+.inputH i {
+    position: absolute;
+    left: 20px;
+    top: 25%;
+    transition: .6s ease;
+}
+
+.inputW i {
+    position: absolute;
+    left: 20px;
+    top: 25%;
+    transition: .6s ease;
+}
+
+.inputW i2 {
+    position: absolute;
+    right: 40px;
+    top: 20%;
+    color: #757575;
+}
+
+.inputH i2 {
+    position: absolute;
+    right: 40px;
+    top: 20%;
+    color: #757575;
+}
+
+.calculate {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    background: transparent;
+    margin-bottom: 20px;
+    transition: .3s ease;
+}
+.calculate:hover {
+    color: #6d5dfc;
+}
+.calculate:active {
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #FFFFFF;
+}
+
+.reset {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    background: transparent;
+    transition: .3s ease;
+}
+
+.reset:active {
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #FFFFFF;
+}
+
+.reset:hover {
+    color: #6d5dfc;
+}
+
+.res {
+    background: #EFEBF4;
+    position: relative;
+    padding: 80px 50px 50px;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.res form h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    line-height: 0.9em;
+}
+
+.res form p {
+    padding: 10px 10px 10px;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.res form h3 {
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #FFFFFF;
+    width: 100%;
+}
+
+.ftrtext {
+    text-decoration: none;
+}
+
+.return {
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 60%;
+
+}
+
+.return:hover {
+    transform: scale(1.01);
+    font-weight: 600;
+    opacity: 100%;
+    color: #6d5dfc;
+}

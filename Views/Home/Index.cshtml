@@ -1,0 +1,28 @@
+﻿@model List<AppContainer.Models.AppContainerModel>
+@{
+    ViewData["Title"] = "Apps";
+}
+
+
+@*----------------------------------------------Slogan----------------------------------------------*@
+<div class="container">
+    <h2 class="mt-5">
+        Apps. <span class="gray">Take a look at the apps, right now.</span>
+    </h2>
+</div>
+
+
+
+@*----------------------------------------------Kartlar----------------------------------------------*@
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        @foreach (var app in Model)
+        {
+            <div class="col mt-5 text-center">
+                <a class="apps" href=@app.AppController>
+                    <div><img src=@app.Image class="app" /></div>
+                </a>
+            </div>
+        }
+    </div> 
+</div>
